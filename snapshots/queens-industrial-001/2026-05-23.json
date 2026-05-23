@@ -1,0 +1,165 @@
+{
+  "snapshot_version": "v2",
+  "captured_at": "2026-05-23T03:09:09.397606+00:00",
+  "deal_id": "queens-industrial-001",
+  "tool_outputs": {
+    "violations": {
+      "bbl": "4007800001",
+      "open_violations_count": 0,
+      "severity_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "I": 0
+      },
+      "most_recent_violation": null,
+      "distress_score": "none",
+      "sample_violations": [],
+      "source_url": "https://data.cityofnewyork.us/Housing-Development/Housing-Maintenance-Code-Violations/wvxf-dwi5?bbl=4007800001",
+      "note": "No HPD violations on file for this BBL."
+    },
+    "market_signals": {
+      "borough": "Queens",
+      "days_back": 90,
+      "min_sale_price": 1000000,
+      "sale_count": 58,
+      "median_price": 1337500.0,
+      "sample_sales": [
+        {
+          "document_id": "2026042400064001",
+          "doc_type": "DEED",
+          "sale_price": 2600000.0,
+          "recorded_date": "2026-04-28",
+          "address": "",
+          "borough_code": "",
+          "acris_url": "https://a836-acris.nyc.gov/DS/DocumentSearch/DocumentDetail?doc_id=2026042400064001"
+        },
+        {
+          "document_id": "2026031400042001",
+          "doc_type": "DEED",
+          "sale_price": 1250000.0,
+          "recorded_date": "2026-04-28",
+          "address": "51-17 47TH STREET",
+          "borough_code": "4",
+          "acris_url": "https://a836-acris.nyc.gov/DS/DocumentSearch/DocumentDetail?doc_id=2026031400042001"
+        },
+        {
+          "document_id": "2026042300049001",
+          "doc_type": "DEED",
+          "sale_price": 2500000.0,
+          "recorded_date": "2026-04-28",
+          "address": "2-22 BEACH 97TH STREET",
+          "borough_code": "4",
+          "acris_url": "https://a836-acris.nyc.gov/DS/DocumentSearch/DocumentDetail?doc_id=2026042300049001"
+        },
+        {
+          "document_id": "2026041800007001",
+          "doc_type": "DEED",
+          "sale_price": 1075000.0,
+          "recorded_date": "2026-04-28",
+          "address": "112-01 QUEENS BOULEVARD",
+          "borough_code": "4",
+          "acris_url": "https://a836-acris.nyc.gov/DS/DocumentSearch/DocumentDetail?doc_id=2026041800007001"
+        },
+        {
+          "document_id": "2026042100819001",
+          "doc_type": "DEED",
+          "sale_price": 1117000.0,
+          "recorded_date": "2026-04-24",
+          "address": "168-12 19 AVENUE",
+          "borough_code": "4",
+          "acris_url": "https://a836-acris.nyc.gov/DS/DocumentSearch/DocumentDetail?doc_id=2026042100819001"
+        }
+      ],
+      "market_signal": "active",
+      "source_url": "https://data.cityofnewyork.us/resource/bnx9-e6tj.json?$where=recorded_borough='4'%20AND%20(doc_type='DEED'%20OR%20doc_type='DEEDO')%20AND%20document_amt%20>=%20'1000000'%20AND%20recorded_datetime%20>=%20'2026-02-22T03:09:04.000'&$limit=500&$order=recorded_datetime%20DESC"
+    },
+    "macro_signals": {
+      "macro_signal": "rates_moved",
+      "as_of": "2026-05-23",
+      "lookback_days": 30,
+      "treasury_10y": {
+        "current_value": 4.57,
+        "prior_value": 4.3,
+        "current_date": "2026-05-21",
+        "prior_date": "2026-04-21",
+        "bps_change": 27,
+        "series_id": "DGS10"
+      },
+      "sofr": {
+        "current_value": 3.51,
+        "prior_value": 3.63,
+        "current_date": "2026-05-21",
+        "prior_date": "2026-04-21",
+        "bps_change": -12,
+        "series_id": "SOFR"
+      },
+      "narrative": "Over the last 30 days: 10Y rose 27 bps (now 4.57%); SOFR fell 12 bps (now 3.51%).",
+      "source_url_treasury_10y": "https://fred.stlouisfed.org/series/DGS10",
+      "source_url_sofr": "https://fred.stlouisfed.org/series/SOFR"
+    },
+    "leasing_comps": {
+      "observed_rent_psf": 30.0,
+      "source": "deal.demo_observations",
+      "provenance": "deal.demo_observations.observed_rent_psf (Two LIC industrial leases week of 2026-05-05 at $30.00/SF. Submarket absorption slowing.)",
+      "sample_leases": [],
+      "csv_path": null
+    },
+    "underwriting": {
+      "deal_id": "queens-industrial-001",
+      "assumptions_locked_at": "2026-04-25",
+      "drivers": [
+        {
+          "name": "observed_rent_psf",
+          "observed": 30.0,
+          "assumed": 32.0,
+          "unit": "$/SF",
+          "source_tool": "deal.demo_observations"
+        },
+        {
+          "name": "observed_rate_bps",
+          "observed": 27.0,
+          "assumed": null,
+          "unit": "bps change",
+          "source_tool": "macro_signals"
+        }
+      ],
+      "noi_delta_dollars": -9500,
+      "noi_assumed_dollars": 1200000,
+      "noi_observed_dollars": 1190500,
+      "irr_assumed_pct": 0.0934,
+      "irr_observed_pct": 0.082,
+      "irr_delta_pct": -0.0114,
+      "irr_stated_in_deal_pct": 0.09,
+      "exit_value_delta_dollars": null,
+      "severity_hint": 3,
+      "narrative_inputs": {
+        "square_footage": 50000.0,
+        "assumed_rent_psf": 32.0,
+        "observed_rent_psf": 30.0,
+        "assumed_exit_cap": 0.055,
+        "observed_exit_cap": null,
+        "assumed_debt_rate": 0.055,
+        "observed_debt_rate": 0.0577,
+        "observed_rate_change_bps": 27,
+        "vacancy_rate": 0.05,
+        "annual_rent_rollover_pct": 0.1,
+        "ltv": 0.7,
+        "rent_growth": 0.035,
+        "hold_period_years": 5
+      }
+    },
+    "dispatch": {
+      "band": "yellow",
+      "edge_label": "advisory",
+      "irr_observed_pct": 0.082,
+      "irr_assumed_pct": 0.0934,
+      "irr_delta_pct": -0.0114,
+      "thresholds": {
+        "green_above": 0.1,
+        "red_below": 0.075
+      },
+      "dispatch_reason": "observed IRR 8.20% sits in watch band (7.5%-10.0%)"
+    }
+  }
+}

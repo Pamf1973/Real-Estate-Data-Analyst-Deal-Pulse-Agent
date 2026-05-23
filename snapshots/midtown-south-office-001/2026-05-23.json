@@ -1,6 +1,6 @@
 {
   "snapshot_version": "v2",
-  "captured_at": "2026-05-23T02:49:06.361349+00:00",
+  "captured_at": "2026-05-23T03:08:52.149893+00:00",
   "deal_id": "midtown-south-office-001",
   "tool_outputs": {
     "violations": {
@@ -72,7 +72,7 @@
         }
       ],
       "market_signal": "active",
-      "source_url": "https://data.cityofnewyork.us/resource/bnx9-e6tj.json?$where=recorded_borough='1'%20AND%20(doc_type='DEED'%20OR%20doc_type='DEEDO')%20AND%20document_amt%20>=%20'1000000'%20AND%20recorded_datetime%20>=%20'2026-02-22T02:49:01.000'&$limit=500&$order=recorded_datetime%20DESC"
+      "source_url": "https://data.cityofnewyork.us/resource/bnx9-e6tj.json?$where=recorded_borough='1'%20AND%20(doc_type='DEED'%20OR%20doc_type='DEEDO')%20AND%20document_amt%20>=%20'1000000'%20AND%20recorded_datetime%20>=%20'2026-02-22T03:08:47.000'&$limit=500&$order=recorded_datetime%20DESC"
     },
     "macro_signals": {
       "macro_signal": "rates_moved",

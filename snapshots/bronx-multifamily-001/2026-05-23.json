@@ -1,6 +1,6 @@
 {
   "snapshot_version": "v2",
-  "captured_at": "2026-05-23T02:48:49.428980+00:00",
+  "captured_at": "2026-05-23T03:08:24.440311+00:00",
   "deal_id": "bronx-multifamily-001",
   "tool_outputs": {
     "violations": {
@@ -66,7 +66,7 @@
         }
       ],
       "market_signal": "slow",
-      "source_url": "https://data.cityofnewyork.us/resource/bnx9-e6tj.json?$where=recorded_borough='2'%20AND%20(doc_type='DEED'%20OR%20doc_type='DEEDO')%20AND%20document_amt%20>=%20'1000000'%20AND%20recorded_datetime%20>=%20'2026-02-22T02:48:44.000'&$limit=500&$order=recorded_datetime%20DESC"
+      "source_url": "https://data.cityofnewyork.us/resource/bnx9-e6tj.json?$where=recorded_borough='2'%20AND%20(doc_type='DEED'%20OR%20doc_type='DEEDO')%20AND%20document_amt%20>=%20'1000000'%20AND%20recorded_datetime%20>=%20'2026-02-22T03:08:19.000'&$limit=500&$order=recorded_datetime%20DESC"
     },
     "macro_signals": {
       "macro_signal": "rates_moved",
